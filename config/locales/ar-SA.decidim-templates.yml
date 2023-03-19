@@ -1,0 +1,6 @@
+---
+ar-SA:
+  activemodel:
+    attributes:
+      template:
+        description: الوصف

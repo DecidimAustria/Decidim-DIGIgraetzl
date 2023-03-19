@@ -1,0 +1,74 @@
+---
+el:
+  activemodel:
+    attributes:
+      questionnaire:
+        title: Τίτλος
+      template:
+        description: Περιγραφή
+        name: Ονομα
+  decidim:
+    admin:
+      menu:
+        templates: Πρότυπα
+      templates:
+        apply:
+          error: Παρουσιάστηκε πρόβλημα κατά την εφαρμογή αυτού του προτύπου.
+          success: Το πρότυπο εφαρμόστηκε με επιτυχία
+        copy:
+          error: Παρουσιάστηκε πρόβλημα κατά την αντιγραφή αυτού του προτύπου.
+          success: Το πρότυπο αντιγράφηκε με επιτυχία
+        create:
+          error: Παρουσιάστηκε πρόβλημα με τη δημιουργία αυτού του προτύπου.
+          success: Το πρότυπο δημιουργήθηκε με επιτυχία
+        destroy:
+          success: Το πρότυπο διαγράφηκε με επιτυχία
+        empty: Δεν υπάρχουν ακόμη πρότυπα.
+        update:
+          error: Παρουσιάστηκε πρόβλημα κατά την ενημέρωση αυτού του προτύπου.
+          success: Το πρότυπο ενημερώθηκε με επιτυχία
+      titles:
+        template_types:
+          questionnaires: Πρότυπα ερωτηματολογίων
+        templates: Πρότυπα
+    models:
+      questionnaire_template:
+        fields:
+          questions: Αριθμός ερωτήσεων
+          title: Τίτλος ερωτηματολογίου
+      template:
+        fields:
+          created_at: Δημιουργήθηκε στο
+        name: Πρότυπο
+    templates:
+      admin:
+        questionnaire_templates:
+          choose:
+            create_from_template: Δημιουργία από πρότυπο
+            description: Πρόκειται να δημιουργήσετε ένα νέο ερωτηματολόγιο. Μπορείτε να επιλέξετε ένα προκαθορισμένο πρότυπο και να το τροποποιήσετε στη συνέχεια.
+            label: Επιλέξτε πρότυπο
+            placeholder: Επιλέξτε πρότυπο
+            skip_template: Παραλείπω
+          edit:
+            edit: Επεξεργασία
+            empty: Δεν υπάρχουν ακόμα ερωτήσεις
+            questionnaire: Ερωτηματολόγιο
+          form:
+            save: Σώσει
+            template_title: Πληροφορίες προτύπου
+            title: Πρότυπο ερωτηματολογίου %{questionnaire_for}
+          index:
+            confirm_delete: Είστε βέβαιοι ότι θέλετε να διαγράψετε αυτό το πρότυπο;
+            title: Πρότυπα ερωτηματολογίων
+          preview:
+            current_step: Βήμα %{step}
+            of_total_steps: του %{total_steps}
+            tos_agreement: Με τη συμμετοχή αποδέχεστε τους Όρους Παροχής Υπηρεσιών του
+      admin_log:
+        template:
+          create: Ο %{user_name} δημιούργησε το πρότυπο ερωτηματολογίου %{resource_name}
+          delete: Ο %{user_name} διέγραψε το πρότυπο ερωτηματολογίου %{resource_name}
+          duplicate: Ο %{user_name} αντιτύπωσε το πρότυπο ερωτηματολογίου %{resource_name}
+          update: Ο %{user_name} ενημέρωσε το πρότυπο ερωτηματολογίου %{resource_name}
+      template_types:
+        questionnaires: Ερωτηματολόγια
