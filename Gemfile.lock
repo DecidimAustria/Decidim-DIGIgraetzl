@@ -170,6 +170,22 @@ GIT
       sassc (~> 2.3)
 
 GIT
+  remote: https://github.com/luizsanches/decidim-module-calendar
+  revision: f389e7a59b2d5a7249ebb5bc6cfe4b2bba7c4103
+  specs:
+    decidim-calendar (0.23.0)
+      decidim-admin (>= 0.27.0)
+      decidim-core (>= 0.27.0)
+
+GIT
+  remote: https://github.com/mainio/decidim-module-term_customizer
+  revision: 5a8d4c67972ef10cd52e774d64a3c7cff9bc9325
+  specs:
+    decidim-term_customizer (0.27.0)
+      decidim-admin (~> 0.27.0)
+      decidim-core (~> 0.27.0)
+
+GIT
   remote: https://github.com/ruby-i18n/i18n
   revision: b4cd00d73234e369d713eb2607c729765bb3ec06
   branch: master
@@ -914,11 +930,13 @@ DEPENDENCIES
   byebug (~> 11.0)
   decidim!
   decidim-alternative_landing!
+  decidim-calendar!
   decidim-conferences (= 0.27.0)
   decidim-consultations!
   decidim-decidim_awesome!
   decidim-dev (= 0.27.0)
   decidim-initiatives (= 0.27.0)
+  decidim-term_customizer!
   easy_translate (~> 0.5.1)
   faker (~> 2.14)
   i18n!

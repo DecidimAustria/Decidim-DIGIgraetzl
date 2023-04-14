@@ -16,6 +16,12 @@ gem "decidim-consultations", git: "https://github.com/DecidimAustria/decidim", b
 gem "decidim-initiatives", DECIDIM_VERSION
 # gem "decidim-templates", DECIDIM_VERSION
 
+# Term customizer by Mainio Tech
+gem "decidim-term_customizer", git: "https://github.com/mainio/decidim-module-term_customizer"
+
+# Calender by Alabs, version of Luiz Sanches
+gem "decidim-calendar", git: "https://github.com/luizsanches/decidim-module-calendar"
+
 # Get latest CLDR changes to fix bug with count :zero
 # remove when this commit gets released in a version https://github.com/ruby-i18n/i18n/commit/c78ca610b64712037e5726adeaf7b84fa96eded9
 gem "i18n", git: "https://github.com/ruby-i18n/i18n", branch: "master"
