@@ -10,11 +10,17 @@ gem "decidim", git: "https://github.com/DecidimAustria/decidim", branch: 'emvi-0
 gem "decidim-alternative_landing", git: "https://github.com/DecidimAustria/decidim-module-alternative_landing", branch: 'update-to-decidim-0.27'
 #gem "decidim-decidim_awesome", git: "https://github.com/DecidimAustria/decidim-module-decidim_awesome", branch: 'update-to-decidim-0.27'
 gem "decidim-decidim_awesome", git: "https://github.com/DecidimAustria/decidim-module-decidim_awesome", branch: 'update-to-decidim-0.27', :ref => '63d7d6bdf73'
-# gem "decidim-conferences", DECIDIM_VERSION
+gem "decidim-conferences", DECIDIM_VERSION
 gem "decidim-consultations", git: "https://github.com/DecidimAustria/decidim", branch: 'emvi-0.27'
 # gem "decidim-elections", DECIDIM_VERSION
-# gem "decidim-initiatives", DECIDIM_VERSION
+gem "decidim-initiatives", DECIDIM_VERSION
 # gem "decidim-templates", DECIDIM_VERSION
+
+# Term customizer by Mainio Tech
+gem "decidim-term_customizer", git: "https://github.com/mainio/decidim-module-term_customizer"
+
+# Calender by Alabs, version of Luiz Sanches
+gem "decidim-calendar", git: "https://github.com/luizsanches/decidim-module-calendar"
 
 # Get latest CLDR changes to fix bug with count :zero
 # remove when this commit gets released in a version https://github.com/ruby-i18n/i18n/commit/c78ca610b64712037e5726adeaf7b84fa96eded9
