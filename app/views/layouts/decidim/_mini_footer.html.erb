@@ -1,22 +1,23 @@
 <div class="mini-footer">
     <div class="row">
-        <a rel="decidim noopener"
-            href="https://european-union.europa.eu/"
-            target="_blank"
-            class="icona">
-            <%= image_pack_tag("media/images/Co-Funded-EU_POS.png", alt: "Co-Funded by the European Union", class: "mitgestalten_logo") %>
+        <a href="https://wien.arbeiterkammer.at/digifonds" target="_blank" rel="decidim noopener">
+            <span class="sr-only"><%=t("layouts.decidim.footer.AK_gefoerdert")%></span>
+            <%= image_pack_tag("media/images/DigifondsGefoerdert.png", alt: t("layouts.decidim.footer.link_neues_fenster"), class: "footer_logo") %>
         </a>
-        <a rel="decidim noopener"
-            href="https://diaspora-participation.eu/"
-            target="_blank"
-            class="icona">
-            <%= image_pack_tag("media/images/Emvi_logo_OK.png", alt: "EMVI: Empowering Migrant Voices", class: "mitgestalten_logo") %>
+    </div>
+    <div class="row logos">
+        <a href="https://partizipationsbuero.at/" class="partner_logo" target="_blank">
+            <span class="sr-only">Mitgestalten Partizipationsbüro</span>
+            <%= image_pack_tag("media/images/mitgestalten-logo.png", alt: t("layouts.decidim.footer.link_neues_fenster"), class: "footer_logo") %>
         </a>
-        <% if current_organization.official_img_footer.attached? %>
-            <%= link_to current_organization.official_url, class: "icona" do %>
-                <%= image_tag current_organization.attached_uploader(:official_img_footer).path, alt: current_organization.name, class: "mitgestalten_logo" %>
-            <% end %>
-        <% end %>
+        <a href="https://realitylab.at/" class="partner_logo" target="_blank"> 
+            <span class="sr-only">Reality Lab</span>
+            <%= image_pack_tag("media/images/realitylab_logo.png", alt: t("layouts.decidim.footer.link_neues_fenster"), class: "footer_logo") %>
+        </a>
+        <a href="https://www.tamara-ehs.net/" class="partner_logo" target="_blank">
+            <span class="sr-only">Tamar Ehs Politikwissenschaft & Demokratieberatung</span>
+            <%= image_pack_tag("media/images/TamaraEhs_logo.png", alt: t("layouts.decidim.footer.link_neues_fenster"), class: "footer_logo") %>
+        </a>
     </div>
     <div class="row">
         <a rel="decidim noopener" class="small_logo icona"
@@ -63,7 +64,7 @@
             href="https://partizipationsbuero.at/"
             target="_blank"
             class="icona">
-            <%= image_pack_tag("media/images/mitgestalten-logo.png", alt: "Mitgestalten Partizipiationsbüro", class: "mitgestalten_logo") %>
+            <%= image_pack_tag("media/images/mitgestalten-logo.png", alt: "Mitgestalten Partizipiationsbüro", class: "footer_logo") %>
         </a>
     </div>
 </div>
