@@ -158,15 +158,6 @@ GIT
       redcarpet (~> 3.4)
 
 GIT
-  remote: https://github.com/DecidimAustria/decidim-module-calendar.git
-  revision: 1276bb7a9c742aea0157a313d7ef800eacd6ab17
-  branch: decidim-0.27
-  specs:
-    decidim-calendar (0.27.0)
-      decidim-admin (>= 0.25.0, < 0.28)
-      decidim-core (>= 0.25.0, < 0.28)
-
-GIT
   remote: https://github.com/DecidimAustria/decidim-module-decidim_awesome
   revision: 63d7d6bdf738481b659cc25b378e9a2b54abe8a7
   ref: 63d7d6bdf73
@@ -931,7 +922,6 @@ DEPENDENCIES
   byebug (~> 11.0)
   decidim!
   decidim-alternative_landing!
-  decidim-calendar!
   decidim-conferences (= 0.27.0)
   decidim-consultations!
   decidim-decidim_awesome!
