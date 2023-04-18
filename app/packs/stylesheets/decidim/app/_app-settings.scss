@@ -55,9 +55,9 @@ $datetime-bg: var(--primary);
 $body-font-family: 'Barlow', sans-serif, system-ui;
 :root{
     --app-body-font: #19191E;
-    --app-body-font-rgb: rgb(25, 25, 30);
-    --app-nav-highlight-grey: #3B3B41;
-    --app-nav-highlight-grey-rgb: rgb(59, 59 65);
+    --app-body-font-rgb: 25, 25, 30;
+    --app-nav-highlight-grey: #19191E;
+    --app-nav-highlight-grey-rgb: 25, 25, 30;
     --app-primary: var(--primary);
     --app-primary-rgb: var(--primary-rgb);
     --app-primary-rgb-dark : darken(var(--app-primary),25%);
@@ -65,7 +65,7 @@ $body-font-family: 'Barlow', sans-serif, system-ui;
     --app-secondary-rgb: var(--secondary-rgb);
     --app-secondary-rgb-dark : lighten(var(--app-secondary),25%);
     --app-background: #FFFFFC;
-    --app-background-rgb: rgb(255, 255, 252);
-    --app-background-even: #FAFAFC;
-    --app-background-even-rgb: rgb(250,250,252);
+    --app-background-rgb: 255, 255, 252;
+    --app-background-even: #F6F6FC;
+    --app-background-even-rgb: 246,246,252;
 }
