@@ -1823,6 +1823,7 @@ tr-TR:
         notifications_settings: Bildirim ayarları
         title: katılımcı ayarları
         user_groups: Gruplar
+        register-right-name: Lütfen gerçek adınızla kayıt olun ve kendi fotoğrafınızı yükleyin. Bu, birbirini tanımayı destekler ve iyi bir birlikte yaşamayı teşvik eder. Belki de bu sayede evde buluştuğumuzda birbirimizi daha kolay tanıyoruz.
       widget:
         see_more: Daha fazla gör
   locale:
