@@ -1825,6 +1825,7 @@ en:
         notifications_settings: Notifications settings
         title: Participant settings
         user_groups: Groups
+        register-right-name: Please register with your real name and upload a picture of yourself. This supports getting to know each other and promotes a good coexistence. Maybe that's how we recognize each other more easily when we meet in the house.
       widget:
         see_more: See more
   locale:
