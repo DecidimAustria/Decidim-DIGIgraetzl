@@ -102,3 +102,52 @@ a, a:hover, .card__link, .card__text a{
 .callout.secondary, .callout.primary{
     border-left:none;
 }
+
+.title-action__action{
+    padding: 1rem 2rem !important;
+    font-size: 1.125rem !important;
+    .icon{
+        height: 1rem;
+        width: 1rem;
+        margin-left: 1rem;
+    }
+}
+
+.pages{
+    .card{
+        ul{
+            list-style-type: none;
+            margin-right: 1.25rem;
+            a{
+                display: block;
+                padding: 0.8rem 0 0.6rem 0;
+                border-bottom: 1px solid rgba(var(--app-body-font-rgb),1);
+                transition: color border 200ms ease-in;
+                &:hover{
+                    color: rgba(var(--app-primary-rgb),1);
+                    border-bottom: 1px solid rgba(var(--app-primary-rgb),1);
+                    transition: color border 200ms ease-in;
+                }
+            }
+        }
+    }
+    .side-panel__tabs .tabs-title.is-active > [role=tab], .side-panel__tabs .tabs-title.is-active > a {
+        color: rgba(var(--app-body-font-rgb), 1);
+        background-color: rgb(var(--app-background-rgb), 1);
+    }
+    
+    .side-panel__tabs .tabs-title > [role=tab], .side-panel__tabs .tabs-title > a {
+        color: rgba(var(--app-body-font-rgb), 1);
+        &:hover{
+            color: rgba(var(--app-body-font-rgb), 1);
+        }
+    }
+    .main-container{
+        background-color: rgb(var(--app-background-rgb), 1);
+        border:none;
+    }
+    .main-container--side-panel{
+        box-shadow: 0 0 5px 0 rgb(var(--app-body-font-rgb), 0.1);
+    }
+    
+}
