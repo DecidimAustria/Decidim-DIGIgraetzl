@@ -831,7 +831,7 @@ hr:
       user_menu:
         title: Linkovi na profil
       user_profile:
-        register-right-name: Registrirajte se sa svojim pravim imenom i postavite svoju sliku. To pomaže međusobnom upoznavanju i promiče dobar suživot. Možda se tako lakše prepoznamo kad se nađemo u kući. 
+        register-right-name: Registrirajte se sa svojim pravim imenom (ime je dovoljno) i postavite svoju sliku. To pomaže međusobnom upoznavanju i promiče dobar suživot. Možda se tako lakše prepoznamo kad se nađemo u kući.
       wrapper:
         unfold: Raširi
   locale:
