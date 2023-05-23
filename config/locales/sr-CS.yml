@@ -831,7 +831,7 @@ sr-CS:
       user_menu:
         title: Linkovi na profil
       user_profile:
-        register-right-name: Molimo vas da se registrujete sa svojim pravim imenom i postavite svoju sliku. Ovo podržava međusobno upoznavanje i promoviše dobar suživot. Možda se tako lakše prepoznajemo kada se sretnemo u kući.
+        register-right-name: Molimo vas da se registrujete sa svojim pravim imenom (ime je dovoljno) i postavite svoju sliku. Ovo podržava međusobno upoznavanje i promoviše dobar suživot. Možda se tako lakše prepoznajemo kada se sretnemo u kući.
       wrapper:
         unfold: Raširi
   locale:
