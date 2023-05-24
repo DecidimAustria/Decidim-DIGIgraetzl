@@ -44,6 +44,9 @@ a{
         transition: color 0.2s ease-in;
     }
 }
+.process-nav__link{
+    text-decoration: none;
+}
 .tooltip{
     a, a:hover, .card__link, .card__text a{
         color:var(--app-primary-rgb-dark);
