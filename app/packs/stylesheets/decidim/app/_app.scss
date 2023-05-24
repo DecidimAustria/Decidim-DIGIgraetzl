@@ -35,6 +35,9 @@ a{
     color:rgba(var(--app-primary-rgb),1);
     text-decoration: underline;
     transition: color 0.2s ease-in;
+    &.button{
+        text-decoration: none;
+    }
     &:hover{
         color:rgba(var(--app-primary-rgb),1);
         text-decoration: none;
