@@ -31,9 +31,15 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{
     font-family: 'Noto Serif Display', serif;
     font-weight: unset;
 }
-a, a:hover, .card__link, .card__text a{
-    color:rgba(var(--app-body-font-rgb),1);
-    text-decoration: none;
+a{
+    color:rgba(var(--app-primary-rgb),1);
+    text-decoration: underline;
+    transition: color 0.2s ease-in;
+    &:hover{
+        color:rgba(var(--app-primary-rgb),1);
+        text-decoration: none;
+        transition: color 0.2s ease-in;
+    }
 }
 .tooltip{
     a, a:hover, .card__link, .card__text a{

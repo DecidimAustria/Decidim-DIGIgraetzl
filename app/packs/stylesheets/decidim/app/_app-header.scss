@@ -264,7 +264,8 @@
     a{
         padding: 0.75rem;
         color:rgba(var(--app-nav-highlight-grey-rgb),1);
-        transition: all 0.2s ease-in;
+        transition: all 0.2s ease;
+        text-decoration: none;
         &:hover, &:focus{
             color:rgba(var(--app-primary-rgb),1);
             text-decoration: none;
