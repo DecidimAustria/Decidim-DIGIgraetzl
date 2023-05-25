@@ -3,7 +3,7 @@
     <% if current_user.follows?(model) %>
       <%= button_to decidim.follow_path, class: button_classes, params: { follow: { followable_gid: model.to_sgid.to_s, inline: inline? } }, data: { disable: true }, method: :delete, remote: true do %>
         <span class="icon-wrap">
-          <%= icon "bell", icon_options %>
+          <%= icon "bell", icon_options.merge("aria-label": "follow") %>
           <span aria-hidden="true"><%= followers_count %></span>
           <span class="show-for-sr"><%= t("decidim.followers.followers_count", count: followers_count) %></span>
         </span>
@@ -15,7 +15,7 @@
     <% else %>
       <%= button_to decidim.follow_path, class: button_classes, params: { follow: { followable_gid: model.to_sgid.to_s, inline: inline? } }, data: { disable: true }, remote: true do %>
         <span class="icon-wrap">
-          <%= icon "bell", icon_options %>
+          <%= icon "bell", icon_options.merge("aria-label": "follow") %>
           <span aria-hidden="true"><%= followers_count %></span>
           <span class="show-for-sr"><%= t("decidim.followers.followers_count", count: followers_count) %></span>
         </span>
@@ -41,7 +41,7 @@
       title: t("decidim.shared.follow_button.sign_in_before_follow"),
       remote: true) do %>
       <span class="icon-wrap">
-        <%= icon "bell", icon_options %>
+        <%= icon "bell", icon_options.merge("aria-label": "follow") %>
         <span aria-hidden="true"><%= followers_count %></span>
         <span class="show-for-sr"><%= t("decidim.followers.followers_count", count: followers_count) %></span>
       </span>
