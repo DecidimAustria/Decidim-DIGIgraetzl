@@ -425,12 +425,12 @@ de:
       mailer:
         invite_join_meeting_mailer:
           invite:
-            subject: Einladung, an einem Meeting teilzunehmen
+            subject: Einladung, an einem Treffen teilzunehmen
         registration_mailer:
           confirmation:
-            subject: Die Registrierung Ihrer Konferenz wurde bestätigt
+            subject: Die Registrierung Ihres Treffens wurde bestätigt
       meeting:
-        not_allowed: Sie dürfen dieses Meeting nicht sehen
+        not_allowed: Sie dürfen dieses Treffen nicht sehen
       meeting_closes:
         edit:
           back: Zurück
