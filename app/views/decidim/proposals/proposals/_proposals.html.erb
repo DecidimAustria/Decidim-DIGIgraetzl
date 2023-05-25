@@ -34,13 +34,3 @@
   </div>
 </div>
 <%= decidim_paginate @proposals %>
-
-<div class="row">
-  <div class="text-right">
-    <% if params.dig("filter", "with_availability").present? && params["filter"]["with_availability"] == "withdrawn" %>
-      <%= link_to t("decidim.proposals.proposals.index.see_all"), proposals_path("filter[with_availability]" => nil) %>
-    <% else %>
-      <%= link_to t("decidim.proposals.proposals.index.see_all_withdrawn"), proposals_path(filter: { with_availability: "withdrawn", state: [""] }) %>
-    <% end %>
-  </div>
-</div>
