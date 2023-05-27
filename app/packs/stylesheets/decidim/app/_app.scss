@@ -24,9 +24,6 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{
 .off-canvas-wrapper{
     background: rgba(var(--app-background-rgb),1);
 }
-.home-section:nth-of-type(2n + 1){
-    /*background-color: rgba(var(--app-background-even-rgb),1);*/
-}
 .text-highlight.heading1{
     font-family: 'Noto Serif Display', serif;
     font-weight: unset;
@@ -164,4 +161,12 @@ a{
 }
 .main-container--side-panel{
     box-shadow: 0 0 5px 0 rgb(var(--app-body-font-rgb), 0.1);
+}
+
+.with_area_areas_select_filter{
+    display:none !important;
+}
+
+.autoComplete_wrapper input {
+    margin: 0 0 1rem;
 }
