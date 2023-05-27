@@ -17,11 +17,6 @@
         </div>
         <div>
           <p class="text-highlight heading-small">
-            <% if current_participatory_space.hashtag.present? %>
-              <span class="process-header__hashtag">
-                <%= link_to "##{decidim_html_escape(current_participatory_space.hashtag)}", twitter_hashtag_url(decidim_html_escape(current_participatory_space.hashtag)), target: "_blank" %>
-              </span>
-            <% end %>
             <%= translated_attribute(current_participatory_space.subtitle) %>
           </p>
         </div>
