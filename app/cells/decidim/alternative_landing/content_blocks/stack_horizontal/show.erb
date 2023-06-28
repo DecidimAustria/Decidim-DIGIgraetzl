@@ -4,9 +4,9 @@
       <%= decidim_sanitize translated_title %>
     </h1>
   </div>
-  <div class="row">
+  <div class="row" style="display:flex; gap:1rem; flex-wrap:wrap;">
     <% 1.upto(3) do |item_number| %>
-      <div class="stack-item card">
+      <div class="stack-item card" style="flex: 0 1 calc( 50% - 1rem );">
         <div class="stack-image">
           <% if image(item_number).present? %>
             <%= image_tag image(item_number) %>
