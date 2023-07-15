@@ -33,6 +33,7 @@ gem "aws-sdk-translate", '~> 1'
 
 gem "bootsnap", "~> 1.3"
 
+gem 'psych', '< 4'
 gem "puma", ">= 5.0.0"
 
 gem "faker", "~> 2.14"
