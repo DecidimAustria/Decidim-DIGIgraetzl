@@ -1,0 +1,172 @@
+/* 
+Created: 23.11.2022
+Modified: 24.11.2022
+Author: Piero Chiussi | info@webchroma.de
+*/
+body{
+    color:rgba(var(--app-body-font-rgb),1);
+    background: rgba(var(--app-background-rgb),1);
+}
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: $body-font-family;
+  font-weight: 600;
+  color:rgba(var(--app-nav-highlight-grey-rgb),1);
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{
+    font-weight: 600;
+    color:rgba(var(--app-nav-highlight-grey-rgb),1);
+}
+.off-canvas-wrapper{
+    background: rgba(var(--app-background-rgb),1);
+}
+.text-highlight.heading1{
+    font-family: 'Noto Serif Display', serif;
+    font-weight: unset;
+}
+a{
+    color:rgba(var(--app-primary-rgb),1);
+    text-decoration: underline;
+    transition: color 0.2s ease-in;
+    &.button{
+        text-decoration: none;
+    }
+    &:hover{
+        color:rgba(var(--app-primary-rgb),1);
+        text-decoration: none;
+        transition: color 0.2s ease-in;
+    }
+}
+.process-nav__link{
+    text-decoration: none;
+}
+.tooltip{
+    a, a:hover, .card__link, .card__text a{
+        color:var(--app-primary-rgb-dark);
+    }
+    a:hover{
+        transition: 0.2s ease-in;
+        text-decoration: none;
+    }
+    a.author__nickname{
+        color:rgba(var(--app-body-font-rgb),1);
+    }
+}
+.author__verified, .author__badge svg {
+    color:rgba(var(--app-secondary-rgb),1);
+}
+.process-nav__link:hover{
+    color:rgba(var(--app-secondary-rgb),1);
+    transition: 0.2s ease-in;
+    text-decoration: none;
+}
+.link{
+    color:rgba(var(--app-secondary-rgb),1);
+}
+.link:hover{
+    color:var(--app-secondary-rgb-dark);
+    transition: 0.2s ease-in;
+    text-decoration: none;
+}
+.proposals .process-header__inner {
+    min-height: 250px;
+}
+@media print, screen and (min-width: 50em){
+    .proposals .process-header__inner {
+        height: 500px;
+    }
+}
+.m-r-5{
+    margin-right:0.4rem;
+}
+.callout{
+    &.primary, &.secondary{
+        background-color:transparent;
+    }
+}
+.floating-helper__content {
+	background-color: transparent;
+	border-top: none;
+	margin-bottom: 3rem;
+	padding: 2rem;
+	width: 100%;
+}
+.floating-helper__icon-big{
+    display:none;
+}
+.floating-helper__content-close{
+    background-color: rgba(var(--app-body-font-rgb),1);
+    color:rgba(var(--app-background-rgb), 1);
+    transition: all ease 500ms;
+}
+.floating-helper__content-close:hover{
+    background-color: rgba(var(--app-primary-rgb),1);
+    color:rgba(var(--app-background-rgb), 1);
+}
+
+.callout.secondary, .callout.primary{
+    border-left:none;
+}
+
+.title-action__action{
+    padding: 1rem 2rem !important;
+    font-size: 1.125rem !important;
+    .icon{
+        height: 1rem;
+        width: 1rem;
+        margin-left: 1rem;
+    }
+}
+
+.pages{
+    .card{
+        ul{
+            list-style-type: none;
+            margin-right: 1.25rem;
+            a{
+                display: block;
+                padding: 0.8rem 0 0.6rem 0;
+                border-bottom: 1px solid rgba(var(--app-body-font-rgb),1);
+                transition: color border 200ms ease-in;
+                &:hover{
+                    color: rgba(var(--app-primary-rgb),1);
+                    border-bottom: 1px solid rgba(var(--app-primary-rgb),1);
+                    transition: color border 200ms ease-in;
+                }
+            }
+        }
+        .card__support{
+            padding-right: 2.25rem;
+        }
+    }
+}
+.side-panel__tabs .tabs-title.is-active > [role=tab], .side-panel__tabs .tabs-title.is-active > a {
+    color: rgba(var(--app-body-font-rgb), 1);
+    background-color: rgb(var(--app-background-rgb), 1);
+}
+
+.side-panel__tabs .tabs-title > [role=tab], .side-panel__tabs .tabs-title > a {
+    color: rgba(var(--app-body-font-rgb), 1);
+    &:hover{
+        color: rgba(var(--app-body-font-rgb), 1);
+    }
+}
+.main-container{
+    background-color: rgb(var(--app-background-rgb), 1);
+    border:none;
+}
+.main-container--side-panel{
+    box-shadow: 0 0 5px 0 rgb(var(--app-body-font-rgb), 0.1);
+}
+
+.with_area_areas_select_filter{
+    display:none !important;
+}
+
+.autoComplete_wrapper input {
+    margin: 0 0 1rem;
+}

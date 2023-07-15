@@ -1731,6 +1731,8 @@ de:
       edit_link:
         edit: Bearbeiten
       footer:
+        link_neues_fenster: Link öffnet einen neuen Fenster
+        AK_gefoerdert: Gefördert durch DIGIFONDS AK Wien
         cc_by_license: Creative Commons Lizenz
         data_consent_settings: Cookie Einstellungen
         decidim_logo: Decidim-Logo
@@ -1785,6 +1787,7 @@ de:
         notifications_settings: Benachrichtigungseinstellungen
         title: Benutzereinstellungen
         user_groups: Gruppen
+        register-right-name: Bitte registriere Dich mit Deinem richtigen Namen (Vorname genügt) und lade ein Bild von Dir hoch. Das unterstützt das Kennenlernen untereinander und fördert das gute Zusammenleben. Vielleicht erkennen wir uns so auch leichter, wenn wir einander im Haus begegnen.
       widget:
         see_more: Mehr sehen
   locale:

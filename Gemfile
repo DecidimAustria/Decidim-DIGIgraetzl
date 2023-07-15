@@ -3,15 +3,14 @@
 source "https://rubygems.org"
 
 ruby RUBY_VERSION
-DECIDIM_VERSION = "0.27.2"
+DECIDIM_VERSION = { git: "https://github.com/DecidimAustria/decidim", branch: 'emvi-0.27.3' }
 
-#gem "decidim", DECIDIM_VERSION
-gem "decidim", git: "https://github.com/DecidimAustria/decidim", branch: 'emvi-0.27.2'
+gem "decidim", DECIDIM_VERSION
 gem "decidim-alternative_landing", git: "https://github.com/DecidimAustria/decidim-module-alternative_landing", branch: 'update-to-decidim-0.27'
 #gem "decidim-decidim_awesome", git: "https://github.com/DecidimAustria/decidim-module-decidim_awesome", branch: 'update-to-decidim-0.27'
 gem "decidim-decidim_awesome", git: "https://github.com/DecidimAustria/decidim-module-decidim_awesome", branch: 'update-to-decidim-0.27', :ref => 'df40b3691a64a2'
-gem "decidim-conferences", git: "https://github.com/DecidimAustria/decidim", branch: 'emvi-0.27.2'
-gem "decidim-consultations", git: "https://github.com/DecidimAustria/decidim", branch: 'emvi-0.27.2'
+gem "decidim-conferences", DECIDIM_VERSION
+gem "decidim-consultations", DECIDIM_VERSION
 # gem "decidim-elections", DECIDIM_VERSION
 gem "decidim-initiatives", git: "https://github.com/DecidimAustria/decidim", branch: 'emvi-0.27.2'
 # gem "decidim-templates", DECIDIM_VERSION
@@ -21,8 +20,8 @@ gem "caracal", :git => "https://github.com/DecidimAustria/caracal"
 # Term customizer by Mainio Tech
 gem "decidim-term_customizer", git: "https://github.com/mainio/decidim-module-term_customizer"
 
-# Calender by Alabs, version of Luiz Sanches
-gem "decidim-calendar", git: "https://github.com/luizsanches/decidim-module-calendar"
+# Calender by Alabs
+#gem "decidim-calendar", git: "https://github.com/DecidimAustria/decidim-module-calendar.git", branch: "decidim-0.27"
 
 # Get latest CLDR changes to fix bug with count :zero
 # remove when this commit gets released in a version https://github.com/ruby-i18n/i18n/commit/c78ca610b64712037e5726adeaf7b84fa96eded9

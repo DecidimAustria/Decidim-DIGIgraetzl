@@ -1,0 +1,71 @@
+/* 
+Created: 23.11.2022
+Modified: 23.11.2022
+Author: Piero Chiussi | info@webchroma.de
+
+APP COLORS
+--app-primary:#eb9243;
+--app-primary-rgb:rgb(235, 146, 67);
+--app-primary-hsl:hsl(28, 81%, 59%);
+--app-secondary:#467d67;
+--app-secondary-rgb:rgb(70, 125, 103);
+--app-secondary-hsl:hsl(28, 81%, 59%);
+
+DECIDIM COLOR VARIABLES
+--alert: #ec5840;
+--alert-rgb: 236,88,64;
+--theme: #ef604d;
+--theme-rgb: 239,96,77;
+--primary: #eb9243;
+--primary-rgb: 235,146,67;
+--success: #57d685;
+--success-rgb: 87,214,133;
+--warning: #ffae00;
+--warning-rgb: 255,174,0;
+--highlight: #be6400;
+--highlight-rgb: 190,100,0;
+--secondary: #467d67;
+--secondary-rgb: 70,125,103;
+--highlight-alternative: #ff5731;
+--highlight-alternative-rgb: 255,87,49;
+
+DECIDIM CARDS
+$card-bg: $white !default;
+$card-secondary-bg: $light-gray-dark;
+$card-border: $border;
+$card-border-radius: $global-radius;
+$card-border-top-width: 8px !default;
+$card-shadow: 0 2px 7px rgba(black, .1);
+$card-id: $medium-gray;
+
+$card-padding-small: 1rem;
+$card-padding: 1.5rem;
+$card-margin-bottom: map-get($grid-column-gutter, medium);
+
+$card-footer-bg: $light-gray-dark;
+
+$card-proposal: var(--proposals);
+$card-action: var(--actions);
+$card-debate: var(--debates);
+$card-meeting: var(--meetings);
+$card-spaces: var(--meetings);
+
+$datetime-bg: var(--primary);
+*/
+$body-font-family: 'Barlow', sans-serif, system-ui;
+:root{
+    --app-body-font: #19191E;
+    --app-body-font-rgb: 25, 25, 30;
+    --app-nav-highlight-grey: #19191E;
+    --app-nav-highlight-grey-rgb: 25, 25, 30;
+    --app-primary: var(--primary);
+    --app-primary-rgb: var(--primary-rgb);
+    --app-primary-rgb-dark : darken(var(--app-primary),25%);
+    --app-secondary: var(--secondary);
+    --app-secondary-rgb: var(--secondary-rgb);
+    --app-secondary-rgb-dark : lighten(var(--app-secondary),25%);
+    --app-background: #FFFFFC;
+    --app-background-rgb: 255, 255, 252;
+    --app-background-even: #F6F6FC;
+    --app-background-even-rgb: 246,246,252;
+}
