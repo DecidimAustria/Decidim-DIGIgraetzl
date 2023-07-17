@@ -2,7 +2,7 @@
 
 source "https://rubygems.org"
 
-ruby "3.1.4"
+ruby "3.0.6"
 DECIDIM_VERSION = { git: "https://github.com/DecidimAustria/decidim", branch: 'emvi-0.27.3' }
 
 gem "decidim", DECIDIM_VERSION
@@ -32,7 +32,7 @@ gem "aws-sdk-translate", '~> 1'
 #gem "deepl-rb", require: "deepl"
 
 gem "bootsnap", "~> 1.3"
-gem 'matrix'
+#gem 'matrix' # for ruby 3.1
 
 gem 'psych', '< 4'
 gem "puma", ">= 5.0.0"

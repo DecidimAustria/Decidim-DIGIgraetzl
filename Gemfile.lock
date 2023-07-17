@@ -961,7 +961,6 @@ DEPENDENCIES
   i18n!
   letter_opener_web (~> 2.0)
   listen (~> 3.1)
-  matrix
   net-imap (~> 0.2.3)
   net-pop (~> 0.1.1)
   net-smtp (~> 0.3.1)
@@ -979,7 +978,7 @@ DEPENDENCIES
   wicked_pdf (~> 2.1)
 
 RUBY VERSION
-   ruby 3.1.4p223
+   ruby 3.0.6p216
 
 BUNDLED WITH
    2.3.20
