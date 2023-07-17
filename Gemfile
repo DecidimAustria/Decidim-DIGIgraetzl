@@ -32,6 +32,7 @@ gem "aws-sdk-translate", '~> 1'
 #gem "deepl-rb", require: "deepl"
 
 gem "bootsnap", "~> 1.3"
+gem 'matrix'
 
 gem 'psych', '< 4'
 gem "puma", ">= 5.0.0"
