@@ -9,7 +9,7 @@ GIT
 
 GIT
   remote: https://github.com/DecidimAustria/decidim
-  revision: 538e0ed4abb31c294d83b714ca67bd95a1673f16
+  revision: 1e2614cdbfcb17696cbec7176fdf5e12d5ffec88
   branch: emvi-0.27.3
   specs:
     decidim (0.27.3)
@@ -201,7 +201,7 @@ GIT
 
 GIT
   remote: https://github.com/DecidimAustria/decidim-enhanced_textwork
-  revision: 21bd7d1ab75e1f0939ab300970396f2a84bd485c
+  revision: ef6e57fba1161bfa4157cc74665b81b270f009e1
   branch: update-to-decidim-0.27
   specs:
     decidim-enhanced_textwork (1.0.5)
