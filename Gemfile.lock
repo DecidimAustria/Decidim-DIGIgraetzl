@@ -201,7 +201,7 @@ GIT
 
 GIT
   remote: https://github.com/DecidimAustria/decidim-enhanced_textwork
-  revision: ef6e57fba1161bfa4157cc74665b81b270f009e1
+  revision: 2bd7401c34f3dee3fb162f563de2acb1ae5a360d
   branch: update-to-decidim-0.27
   specs:
     decidim-enhanced_textwork (1.0.5)
