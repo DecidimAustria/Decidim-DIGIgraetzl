@@ -39,6 +39,7 @@ gem "puma", ">= 5.0.0"
 
 gem "faker", "~> 2.14"
 
+gem "stackprof"
 gem "sentry-ruby"
 gem "sentry-rails"
 
