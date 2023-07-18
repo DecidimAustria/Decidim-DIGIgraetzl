@@ -201,7 +201,7 @@ GIT
 
 GIT
   remote: https://github.com/DecidimAustria/decidim-enhanced_textwork
-  revision: fd91394d4fccbac53a689f61116246a192ac0b0c
+  revision: 21bd7d1ab75e1f0939ab300970396f2a84bd485c
   branch: update-to-decidim-0.27
   specs:
     decidim-enhanced_textwork (1.0.5)
@@ -321,7 +321,7 @@ GEM
       public_suffix (>= 2.0.2, < 6.0)
     ast (2.4.2)
     aws-eventstream (1.2.0)
-    aws-partitions (1.786.0)
+    aws-partitions (1.787.0)
     aws-sdk-core (3.178.0)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.651.0)
@@ -598,7 +598,7 @@ GEM
       tomlrb
     mixlib-shellout (3.2.7)
       chef-utils
-    msgpack (1.7.1)
+    msgpack (1.7.2)
     multi_xml (0.6.0)
     mustache (1.1.1)
     net-imap (0.2.3)
@@ -872,6 +872,7 @@ GEM
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
     ssrf_filter (1.1.1)
+    stackprof (0.2.25)
     strscan (3.0.6)
     temple (0.10.2)
     terminal-table (3.0.2)
@@ -973,6 +974,7 @@ DEPENDENCIES
   solargraph
   spring (~> 2.0)
   spring-watcher-listen (~> 2.0.0)
+  stackprof
   virtus (~> 1.0.5)
   web-console (~> 4.2)
   wicked_pdf (~> 2.1)
