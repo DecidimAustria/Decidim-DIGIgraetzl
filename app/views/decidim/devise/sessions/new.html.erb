@@ -2,25 +2,27 @@
 
 <div class="wrapper">
   <div class="row collapse">
-    <div class="row collapse">
-      <h1 class="text-center" style="margin-bottom:1.5rem;font-size:2rem;">DIGIgrätzl ist <br> die Hausplattform für den Lebenscampus.</h1>
-      <div class="columns large-8 large-centered page-title">
-        <p>Als Bewohner:in kannst Du:
-          <ul>
-            <li>Dich hier mit Deinen <strong>Nachbar:innen verbinden</strong>;</li>
-            <li>Gegenstände <strong>tauschen</strong> und <strong>teilen</strong>;</li>
-            <li><strong>Gemeinsame</strong> Aktivitäten in den Gemeinschaftsräumen <strong>planen</strong>;</li>
-            <li>Dir wichtige <strong>Hausthemen</strong> einbringen</li>
-            <li>und vieles andere.</li>
-          </ul>
-          Registriere Dich jetzt und entdecke <strong>Deine Hausplattform</strong>. 
-          Die Plattform legt hohen Wert auf Datenschutz und erfasst nur wenige persönliche Daten. 
-          Solltest Du mehr wissen wollen, <a href="/pages/help">schau in unser Hilfe-Menü</a>.
+    <% if current_organization.name.downcase == "lebencampus" %>
+      <div class="row collapse">
+        <h1 class="text-center" style="margin-bottom:1.5rem;font-size:2rem;">DIGIgrätzl ist <br> die Hausplattform für den Lebenscampus.</h1>
+        <div class="columns large-8 large-centered page-title">
+          <p>Als Bewohner:in kannst Du:
+            <ul>
+              <li>Dich hier mit Deinen <strong>Nachbar:innen verbinden</strong>;</li>
+              <li>Gegenstände <strong>tauschen</strong> und <strong>teilen</strong>;</li>
+              <li><strong>Gemeinsame</strong> Aktivitäten in den Gemeinschaftsräumen <strong>planen</strong>;</li>
+              <li>Dir wichtige <strong>Hausthemen</strong> einbringen</li>
+              <li>und vieles andere.</li>
+            </ul>
+            Registriere Dich jetzt und entdecke <strong>Deine Hausplattform</strong>. 
+            Die Plattform legt hohen Wert auf Datenschutz und erfasst nur wenige persönliche Daten. 
+            Solltest Du mehr wissen wollen, <a href="/pages/help">schau in unser Hilfe-Menü</a>.
+            </p>
+            <p class="text-center">Wir wünschen Dir viel Spaß auf <span style="font-weight:600;">DIGIgrätzl</span>.</p>
           </p>
-          <p class="text-center">Wir wünschen Dir viel Spaß auf <span style="font-weight:600;">DIGIgrätzl</span>.</p>
-        </p>
+        </div>
       </div>
-    </div>
+    <% end %>
     <div class="row collapse">
       <div class="columns large-8 large-centered text-center page-title">
         <h2 style="font-size:3rem;"><%= t("devise.sessions.new.sign_in") %></h2>
