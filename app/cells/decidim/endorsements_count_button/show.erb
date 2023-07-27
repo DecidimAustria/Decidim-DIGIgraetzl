@@ -1,0 +1,42 @@
+<div id="<%= dom_id(model, :endorsements_count_button) %>">
+    <% if model.published? %>
+        <% if model.endorsed_by?(current_user) %>
+            <%= action_authorized_button_to(
+                :endorse,
+                decidim.endorsement_path(model.to_gid.to_param,
+                        user_group_id: nil,
+                        authenticity_token: form_authenticity_token),
+                resource: model,
+                method: :delete,
+                remote: true,
+                "aria-label": "#{t("decidim.endorsable.endorsements_count")}: #{model.endorsements_count}",
+                title: t("decidim.endorsable.endorsements_count"),
+                id: "endorsement_button"
+            ) do %>
+                <%= with_tooltip t("decidim.endorsable.endorsements") do %>
+                    <%= render :endorsments_counter %>
+                <% end %>
+            <% end %>
+        <% else %>
+            <%= action_authorized_button_to(
+                :endorse,
+                decidim.endorsements_path(resource_id: model.to_gid.to_param,
+                            user_group_id: nil,
+                            authenticity_token: form_authenticity_token),
+                resource: model,
+                remote: true,
+                "aria-label": "#{t("decidim.endorsable.endorsements_count")}: #{model.endorsements_count}",
+                title: t("decidim.endorsable.endorsements_count"),
+                id: "endorsement_button"
+            ) do %>
+                <%= with_tooltip t("decidim.endorsable.endorsements") do %>
+                    <%= render :endorsments_counter %>
+                <% end %>
+            <% end %>
+        <% end %>
+    <% else %>
+        <%= with_tooltip t("decidim.endorsable.endorsements") do %>
+            <%= render :endorsments_counter %>
+        <% end %>
+    <% end %>
+</div>
