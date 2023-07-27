@@ -1,0 +1,31 @@
+<% if Decidim::UserGroups::ManageableUserGroups.for(current_user).verified.empty? %>
+update_main_page_button();
+<% end %>
+update_identities_rows();
+update_endorsements_status();
+
+function update_main_page_button() {
+  var $endorsementButton = $('#resource-<%= resource.id %>-endorsement-button');
+  if($endorsementButton.length > 0) {
+    morphdom($endorsementButton[0], '<%= j(endorsement_buttons_cell(resource).render_user_identity_endorse_button).strip.html_safe %>');
+  }
+}
+function update_identities_rows() {
+  <% fully_endorsed= fully_endorsed?(resource, current_user) %>
+  var $endorsementsRowCount = $('#resource-<%= resource.id %>-endorsements-count');
+  if($endorsementsRowCount.length > 0) {
+    morphdom($endorsementsRowCount[0], '<%= j(endorsement_buttons_cell(resource).render_endorsements_count).strip.html_safe %>');
+    var $endorsementsRowButton = $($('#select-identity-button')[0]);
+    <% if fully_endorsed %>
+      $endorsementsRowButton.addClass('active')
+    <% else %>
+      $endorsementsRowButton.removeClass('active')
+    <% end %>
+  }
+}
+function update_endorsements_status() {
+  var $endorsementsCountButton = $('#<%= dom_id(resource, :endorsements_count_button) %>');
+  if($endorsementsCountButton.length > 0) {
+    morphdom($("#<%= dom_id(resource, :endorsements_count_button) %>")[0], "<%= j((cell "decidim/endorsements_count_button", resource).to_s.strip.html_safe) %>");
+  }
+}

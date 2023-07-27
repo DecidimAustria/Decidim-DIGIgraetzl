@@ -78,17 +78,7 @@ module Decidim
       end
 
       def endorsements_count_status
-        return endorsements_count unless has_link_to_resource?
-
-        link_to resource_path + "#resource-#{model.id}-endorsements-count", "aria-label" => "#{t("decidim.endorsable.endorsements_count")}: #{model.endorsements_count}", title: t("decidim.endorsable.endorsements_count") do
-          endorsements_count
-        end
-      end
-
-      def endorsements_count
-        with_tooltip t("decidim.endorsable.endorsements") do
-          render :endorsments_counter
-        end
+        cell "decidim/endorsements_count_button", model
       end
 
       def progress_bar_progress
