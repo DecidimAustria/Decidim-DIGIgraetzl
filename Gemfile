@@ -14,6 +14,7 @@ gem "decidim-consultations", DECIDIM_VERSION
 # gem "decidim-elections", DECIDIM_VERSION
 gem "decidim-initiatives", DECIDIM_VERSION
 # gem "decidim-templates", DECIDIM_VERSION
+gem "omniauth-decidim"
 gem "decidim-enhanced_textwork", git: "https://github.com/DecidimAustria/decidim-enhanced_textwork", branch: 'update-to-decidim-0.27'
 gem "caracal", :git => "https://github.com/DecidimAustria/caracal"
 
