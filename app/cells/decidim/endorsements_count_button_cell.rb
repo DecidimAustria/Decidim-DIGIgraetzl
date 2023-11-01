@@ -13,7 +13,6 @@ module Decidim
 
     delegate :current_user, to: :controller, prefix: false
     delegate :current_settings, to: :controller, prefix: false
-    delegate :current_component, to: :controller, prefix: false
     delegate :allowed_to?, to: :controller, prefix: false
 
     def show
