@@ -29,6 +29,7 @@ gem "decidim-term_customizer", git: "https://github.com/mainio/decidim-module-te
 gem "i18n", git: "https://github.com/ruby-i18n/i18n", branch: "master"
 
 gem "aws-sdk-translate", '~> 1'
+gem 'aws-sdk-s3'
 
 #gem "deepl-rb", require: "deepl"
 
