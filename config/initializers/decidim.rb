@@ -159,6 +159,11 @@ Decidim.configure do |config|
   # Workaround to enable SVG assets cors
   config.cors_enabled = Rails.application.secrets.decidim[:cors_enabled].present?
 
+  config.content_security_policies_extra = {
+    "img-src": %w(https://cdn.participation.works),
+    "frame-src": %w(https://www.youtube.com)
+  }  
+
   # Defines the quality of image uploads after processing. Image uploads are
   # processed by Decidim, this value helps reduce the size of the files.
   config.image_uploader_quality = Rails.application.secrets.decidim[:image_uploader_quality].to_i
