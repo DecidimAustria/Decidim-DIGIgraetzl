@@ -3,7 +3,7 @@
 source "https://rubygems.org"
 
 ruby "3.0.6"
-DECIDIM_VERSION = { git: "https://github.com/DecidimAustria/decidim", branch: 'emvi-0.27.4' }
+DECIDIM_VERSION = { git: "https://github.com/DecidimAustria/decidim", branch: 'emvi-0.27.6' }
 
 gem "decidim", DECIDIM_VERSION
 gem "decidim-alternative_landing", git: "https://github.com/DecidimAustria/decidim-module-alternative_landing", branch: 'update-to-decidim-0.27'
@@ -19,7 +19,7 @@ gem "decidim-enhanced_textwork", git: "https://github.com/DecidimAustria/decidim
 gem "caracal", :git => "https://github.com/DecidimAustria/caracal"
 
 # Term customizer by Mainio Tech
-gem "decidim-term_customizer", git: "https://github.com/mainio/decidim-module-term_customizer"
+gem "decidim-term_customizer", git: "https://github.com/mainio/decidim-module-term_customizer", branch: "release/0.27-stable"
 
 # Calender by Alabs
 #gem "decidim-calendar", git: "https://github.com/DecidimAustria/decidim-module-calendar.git", branch: "decidim-0.27"
