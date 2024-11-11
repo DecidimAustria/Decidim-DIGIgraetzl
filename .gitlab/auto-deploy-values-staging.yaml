@@ -143,14 +143,14 @@ workers:
       path: "/status/connected"
       port: 7001
       initialDelaySeconds: 60
-      timeoutSeconds: 10
+      timeoutSeconds: 5
       scheme: "HTTP"
       probeType: "httpGet"
     readinessProbe:
       path: "/status/started"
       port: 7001
       initialDelaySeconds: 60
-      timeoutSeconds: 10
+      timeoutSeconds: 20
       scheme: "HTTP"
       probeType: "httpGet"
     resources:
