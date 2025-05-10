@@ -90,11 +90,11 @@ readinessProbe:
   probeType: "httpGet"
 resources:
  limits:
-   cpu: 8000m
-   memory: 4096Mi
- requests:
-   cpu: 500m
+   cpu: 3000m
    memory: 3072Mi
+ requests:
+   cpu: 200m
+   memory: 2048Mi
 affinity:
   nodeAffinity:
       preferredDuringSchedulingIgnoredDuringExecution:
